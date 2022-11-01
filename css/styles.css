@@ -23,9 +23,15 @@ body {
 }
 
 .header-img {
-  background-image: url("/imgs/lone-starfish-wide.jpg");
+  /* background-image: url("/imgs/lone-starfish-wide.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+  position: absolute;
+}
+
+/* Position property used to overlay text on top of the image  */
+.header-text {
+  position: relative;
 }
 
 h1 {
@@ -63,6 +69,10 @@ nav .nav-container {
   text-decoration: none;
 }
 
+.nav-container li:hover {
+  background-color: #AAD4CF;
+}
+
 article {
   padding: 0 10px;
 }
@@ -71,7 +81,7 @@ h2 {
   color: #000000;
   font-size: 36px;
   font-weight: 600;
-  letter-spacing: -1px;
+  letter-spacing: -1.6px;
   padding-top: 36px;
   padding-bottom: 20px;
 }
@@ -85,7 +95,7 @@ h2 {
 
 p {
   font-size: 16px;
-  font-weight: regular;
+  font-weight: normal;
   line-height: 1.4;
   padding-right: 8px;
 }
@@ -154,9 +164,14 @@ h4 {
 
 .form-container .send-input {
   background: none;
+  border: 1px solid #000000;
   cursor: pointer;
   font-size: 10px;
   padding: 10px;
+}
+
+.send-input:hover {
+  background-color: #AAD4CF;
 }
 
 footer .container {
